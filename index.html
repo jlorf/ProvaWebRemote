@@ -17,7 +17,14 @@
   <div class="container-fluid">
     <h1 class="display-3">prova</h1>
     <img id ="imatge" src="./images/imatge.png" />
+    <p id="demo"></p>
+    <button type="button" class="btn btn-primary" onclick="addData()">data</button>
   </div>
+    <script type="text/javascript">
+      function addData(){
+        document.getElementById('demo').innerHTML = new Date().toISOString().slice(0,10).replace(/-/g,"-");
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
